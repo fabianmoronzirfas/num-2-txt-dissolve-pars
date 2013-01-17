@@ -6,4 +6,4 @@ It takes the selected story and converts all numbering to text via `convertBulle
 Then:  
 1. TAB to WHITESPACE  
 2. LINEBREAK to WHITESPACE  
-3.CARRIDGE RETURN to DIGIT WHITESPACE  
+3. CARRIDGE RETURN to DIGIT WHITESPACE  
