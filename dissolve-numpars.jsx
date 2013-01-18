@@ -32,7 +32,7 @@ var greps = [{
 ];
 
 var grep_fn =  {
-    "findWhat": "~/(\\d0{1,10000}\\.)",
+    "findWhat": "~/(\\d{1,100000}0{1,100000}\\.)",
     "changeTo": "\r$1"
 };
 

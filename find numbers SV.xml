@@ -9,7 +9,7 @@
 </QueryType>
 </Header>
 <Description>
-<FindExpression value="~/(\d0{1,10000}\.)">
+<FindExpression value="~/(\d{1,10000}0{1,10000}\.)">
 </FindExpression>
 <ReplaceExpression value="\r$1">
 </ReplaceExpression>
