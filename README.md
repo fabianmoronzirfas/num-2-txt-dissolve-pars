@@ -19,6 +19,12 @@ Create from your InDesign Footnotes Endnotes using [foot_to_endnote.jsx by Peter
 2. Select the first textframe of the story you want to dissolve.
 3. Run the script  
 
+##Source  
+![source image](source.png)  
+##Result  
+![result image](result.jpg)  
+
+
 ##License  
 Copyright (c)  2013 Fabian "fabiantheblind" Morón Zirfas  
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software  without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to  permit persons to whom the Software is furnished to do so, subject to the following conditions:  
