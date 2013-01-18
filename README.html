@@ -157,7 +157,7 @@ pre .tex .formula {
 <li>It converts TAB to WHITESPACE</li>
 <li>It converts LINEBREAK to WHITESPACE</li>
 <li>It converts CARRIAGE RETURN to DIGIT WHITESPACE</li>
-<li>It converts DIGIT WHITESPACE + ( DIGIT + 0 (1 to 10000 times) ) = NUMBER + PERIOD to CARRIAGE RETURN + NUMBER</li>
+<li>It converts DIGIT WHITESPACE + ( DIGIT (1 to 100000 times) + 0 (1 to 100000 times) ) = NUMBER + PERIOD to CARRIAGE RETURN + NUMBER</li>
 </ol>
 
 <h2>Usage</h2>
@@ -182,7 +182,7 @@ pre .tex .formula {
 
 <p>There is also a <a href="https://raw.github.com/fabiantheblind/num-2-txt-dissolve-pars/master/find%20numbers%20SV.xml">GREP .xml</a> included to find every &#8220;10.&#8221;, &#8220;20.&#8221;,&#8220;30.&#8221; and so on and replaces them with a CARRIAGE RETURN and the result. </p>
 
-<pre><code>&lt;FindExpression value=&quot;~/(\d0{1,10000}\.)&quot;&gt;
+<pre><code>&lt;FindExpression value=&quot;~/(\d{1,100000}0{1,100000}\.)&quot;&gt;
 
 &lt;ReplaceExpression value=&quot;\r$1&quot;&gt;  
 </code></pre>
