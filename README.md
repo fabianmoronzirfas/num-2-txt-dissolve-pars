@@ -11,7 +11,7 @@ Create from your InDesign Footnotes Endnotes using [foot_to_endnote.jsx by Peter
 3. It converts TAB to WHITESPACE  
 4. It converts LINEBREAK to WHITESPACE  
 5. It converts CARRIAGE RETURN to DIGIT WHITESPACE  
-6. It converts DIGIT WHITESPACE + ( DIGIT (1 to 100000 times) + 0 (1 to 100000 times) ) = NUMBER + PERIOD to CARRIAGE RETURN + NUMBER  
+6. It converts DIGIT WHITESPACE + ( DIGIT (1 to 100000 times) + 0 (1 to 100000 times) + PERIOD ) = VARIABLE to CARRIAGE RETURN + VARIABLE  
 
 ##Usage  
 
