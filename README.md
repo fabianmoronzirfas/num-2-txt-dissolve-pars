@@ -20,9 +20,9 @@ Create from your InDesign Footnotes Endnotes using [foot_to_endnote.jsx by Peter
 3. Run the script  
 
 ##Source  
-![source image](source.png)  
+![source image](https://raw.github.com/fabiantheblind/num-2-txt-dissolve-pars/master/source.png)  
 ##Result  
-![result image](result.jpg)  
+![result image](https://raw.github.com/fabiantheblind/num-2-txt-dissolve-pars/master/result.jpg)  
 
 
 ##License  
