@@ -74,8 +74,8 @@ function dissolve_numpars() {
                 for(var j = storyPars.length - 1; j >= 1; j--) {
                     var par_to_grep = storyPars[j];
                     grep_it(par_to_grep, grp.findWhat, grp.changeTo);
-                    grep_it(par_to_grep, grp.findWhat, grp.changeTo);
-                    grep_it(par_to_grep, grp.findWhat, grp.changeTo);
+                    // grep_it(par_to_grep, grp.findWhat, grp.changeTo);
+                    // grep_it(par_to_grep, grp.findWhat, grp.changeTo);
                 } // end par loop
             }
         }
