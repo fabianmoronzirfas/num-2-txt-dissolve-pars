@@ -28,9 +28,13 @@ var greps = [{
 }, {
     "findWhat": "\r",
     "changeTo": "~/"
-} //     Find all double spaces and replace with single spaces.
+}
 ];
 
+var grep_fn =  {
+    "findWhat": "~/(\\d0{1,10000}\\.)",
+    "changeTo": "\r$1"
+};
 
 dissolve_numpars();
 
@@ -78,6 +82,7 @@ function dissolve_numpars() {
                     // grep_it(par_to_grep, grp.findWhat, grp.changeTo);
                 } // end par loop
             }
+            grep_it(selTfParentStory,grep_fn.findWhat,grep_fn.changeTo);
         }
 
     } //close no TextFrame
