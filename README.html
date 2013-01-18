@@ -156,7 +156,8 @@ pre .tex .formula {
 <li>It takes the selected story and converts all numbering to text via <a href="http://jongware.mit.edu/idcs6js/pc_Paragraph.html#convertBulletsAndNumberingToText"><code>convertBulletsAndNumberingToText()</code></a>.</li>
 <li>It converts TAB to WHITESPACE</li>
 <li>It converts LINEBREAK to WHITESPACE</li>
-<li>It converts CARRIDGE RETURN to DIGIT WHITESPACE</li>
+<li>It converts CARRIAGE RETURN to DIGIT WHITESPACE</li>
+<li>It converts DIGIT WHITESPACE + ( DIGIT + 0 (1 to 10000 times) ) = NUMBER + PERIOD to CARRIAGE RETURN + NUMBER</li>
 </ol>
 
 <h2>Usage</h2>
@@ -177,7 +178,14 @@ pre .tex .formula {
 
 <h2>Misc</h2>
 
-<p>There is also a <a href="https://raw.github.com/fabiantheblind/num-2-txt-dissolve-pars/master/find%20numbers%20SV.xml">GREP .xml</a> included to find every &#8220;10.&#8221;, &#8220;20.&#8221;,&#8220;30.&#8221; and so on and replaces them with a CARRIDGE RETURN and the result. </p>
+<h3>Grep Expression Numbers</h3>
+
+<p>There is also a <a href="https://raw.github.com/fabiantheblind/num-2-txt-dissolve-pars/master/find%20numbers%20SV.xml">GREP .xml</a> included to find every &#8220;10.&#8221;, &#8220;20.&#8221;,&#8220;30.&#8221; and so on and replaces them with a CARRIAGE RETURN and the result. </p>
+
+<pre><code>&lt;FindExpression value=&quot;~/(\d0{1,10000}\.)&quot;&gt;
+
+&lt;ReplaceExpression value=&quot;\r$1&quot;&gt;  
+</code></pre>
 
 <h2>License</h2>
 
