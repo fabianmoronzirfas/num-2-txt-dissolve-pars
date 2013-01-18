@@ -20,7 +20,7 @@ Create from your InDesign Footnotes Endnotes using [foot_to_endnote.jsx by Peter
 3. Run the script  
 
 ##Misc  
-THere is also a [GREP .xml](https://raw.github.com/fabiantheblind/num-2-txt-dissolve-pars/master/find%20numbers%20SV.xml) included to find every "10.", "20.","30." and so on and replaces them with a CARRIDGE RETURN and the result.  
+There is also a [GREP .xml](https://raw.github.com/fabiantheblind/num-2-txt-dissolve-pars/master/find%20numbers%20SV.xml) included to find every "10.", "20.","30." and so on and replaces them with a CARRIDGE RETURN and the result.  
 
 ##Source  
 ![source image](https://raw.github.com/fabiantheblind/num-2-txt-dissolve-pars/master/source.png)  
