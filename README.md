@@ -10,7 +10,8 @@ Create from your InDesign Footnotes Endnotes using [foot_to_endnote.jsx by Peter
 2. It takes the selected story and converts all numbering to text via [`convertBulletsAndNumberingToText()`](http://jongware.mit.edu/idcs6js/pc_Paragraph.html#convertBulletsAndNumberingToText).  
 3. It converts TAB to WHITESPACE  
 4. It converts LINEBREAK to WHITESPACE  
-5. It converts CARRIDGE RETURN to DIGIT WHITESPACE  
+5. It converts CARRIAGE RETURN to DIGIT WHITESPACE  
+6. It converts DIGIT WHITESPACE + ( DIGIT + 0 (1 to 10000 times) ) = NUMBER + PERIOD to CARRIAGE RETURN + NUMBER  
 
 ##Usage  
 
@@ -25,7 +26,12 @@ Create from your InDesign Footnotes Endnotes using [foot_to_endnote.jsx by Peter
 
 
 ##Misc  
-There is also a [GREP .xml](https://raw.github.com/fabiantheblind/num-2-txt-dissolve-pars/master/find%20numbers%20SV.xml) included to find every "10.", "20.","30." and so on and replaces them with a CARRIDGE RETURN and the result.  
+###Grep Expression Numbers  
+There is also a [GREP .xml](https://raw.github.com/fabiantheblind/num-2-txt-dissolve-pars/master/find%20numbers%20SV.xml) included to find every "10.", "20.","30." and so on and replaces them with a CARRIAGE RETURN and the result.  
+
+    <FindExpression value="~/(\d0{1,10000}\.)">
+    
+    <ReplaceExpression value="\r$1">
 
 ##License  
 Copyright (c)  2013 Fabian "fabiantheblind" Morón Zirfas  
