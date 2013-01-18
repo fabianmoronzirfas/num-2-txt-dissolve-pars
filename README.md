@@ -8,7 +8,7 @@ Create from your InDesign Footnotes Endnotes using [foot_to_endnote.jsx by Peter
 
 ##What Happens  
 1. It removes all [`paragraphDestinations`](http://jongware.mit.edu/idcs6js/pc_ParagraphDestinations.html) in the document  
-2. It takes the selected story and converts all numbering to text via `convertBulletsAndNumberingToText()`.  
+2. It takes the selected story and converts all numbering to text via [`convertBulletsAndNumberingToText()`](http://jongware.mit.edu/idcs6js/pc_Paragraph.html#convertBulletsAndNumberingToText).  
 3. It converts TAB to WHITESPACE  
 4. It converts LINEBREAK to WHITESPACE  
 5. It converts CARRIDGE RETURN to DIGIT WHITESPACE  
