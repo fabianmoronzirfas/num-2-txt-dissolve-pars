@@ -7,7 +7,7 @@ this is a ID CS6 script 4 SV.
 Create from your InDesign Footnotes Endnotes using [foot_to_endnote.jsx by Peter Kahrel.](http://www.kahrel.plus.com/indesign/foot_to_endnote.html)  
 
 ##What Happens  
-1. It removes all crossReferences in the document  
+1. It removes all [`paragraphDestinations`](http://jongware.mit.edu/idcs6js/pc_ParagraphDestinations.html) in the document  
 2. It takes the selected story and converts all numbering to text via `convertBulletsAndNumberingToText()`.  
 3. It converts TAB to WHITESPACE  
 4. It converts LINEBREAK to WHITESPACE  

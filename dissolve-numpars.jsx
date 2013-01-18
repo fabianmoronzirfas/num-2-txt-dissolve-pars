@@ -46,7 +46,7 @@ function dissolve_numpars() {
         return;
     }
 
-    var resConfirm = confirm("This will delete all crossreferences. Are you shure?", false);
+    var resConfirm = confirm("This will delete all paragraphDestinations. Are you shure?", false);
     if(resConfirm === false) {
 
     }else{
